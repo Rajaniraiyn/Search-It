@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://hiil.atwebpages.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Search All</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="http://hiil.atwebpages.com/favicon.png">
+    <link rel="stylesheet" href="./Search All_files/style.css">
+    
+    <style>
+        body {
+        margin: 0;
+        }
+        
+        header {
+        border-radius:10px;
+        margin-top:0;
+        width:100%;
+        }
+                
+        h1 {
+        font-size: xxx-large;
+        text-align: center;
+        }
+        
+        h2 {
+        text-align: center;
+        }
+        
+        input,button {
+        display:flex;
+        border-radius:100px;
+        border-width:0;
+        }
+        
+        .search {
+        padding:10px;
+        margin: 10% auto
+        }
+        
+        input {
+        border-bottom:0;
+        background:#c1c1c1;
+        margin-left: auto;
+        margin-right: auto;
+        min-height:30px;
+        min-width:300px;
+        outline:0;
+        text-align:center;
+        font-family: Arial,Helvetica,Sans-Serif;
+        }
+        
+        input:hover {
+        background:#0ff;
+        }
+        
+        button {
+        margin:10px auto;
+        background:gray;
+        padding:5px;
+        outline:0;
+        }ng: 5px
+        }
+    </style>
+    <script>
+        function myS1() {
+         var search = document.getElementById("search 1").value;
+         var duck = "http://duckduckgo.com/?q=";
+         location.href = duck + search
+         
+        }
+        
+        function myS2() {
+         var search = document.getElementById("search 2").value;
+         var google = "http://google.com/search?q=";
+         location.href = google + search
+         
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+    <div id="h1"></div>
+    <h1>Search Everything</h1>
+    <div id="h2"> </div>
+    </header>
+    <div class="search">
+        <h2>Search Privately</h2>
+        <input id="search 1" onkeydown="if (event.keyCode == 13) document.getElementById(&#39;S1&#39;).click()">
+        <button id="S1" onclick="myS1()">Go</button>
+    </div>
+    <div class="search">
+        <h2>Search Completly</h2>
+        <input id="search 2" onkeydown="if (event.keyCode == 13) document.getElementById(&#39;S2&#39;).click()">
+        <button id="S2" onclick="myS2()">Go</button>
+    </div>
+    <footer></footer>
+
+
+</body></html>
