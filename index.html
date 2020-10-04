@@ -56,12 +56,12 @@
       function myS1() {
       var search=document.getElementById("S1").value;
       var duck="http://duckduckgo.com/?q=";
-      location.href="duck+search";
+      location.href=duck+search;
      }
      function myS2() {
       var search=document.getElementById("S2").value;
       var google="http://google.com/search?q=";
-      location.href="google+search";
+      location.href=google+search;
      }       
   </script>
 </head>
@@ -72,10 +72,10 @@
     <div id="h2"></div>
   </header>
   <div class="search">
-    <h2>Search Privately</h2><input id="S1" onkeydown="if (event.keyCode == 13) document.getElementById('S1').click()"> <button id="B1" onclick="myS1()">Go</button>
+    <h2>Search Privately</h2><input id="S1" onkeydown="if (event.keyCode == 13) document.getElementById('B1').click()"> <button id="B1" onclick="myS1()">Go</button>
   </div>
   <div class="search">
-    <h2>Search Completly</h2><input id="S2" onkeydown="if (event.keyCode == 13) document.getElementById('S2').click()"> <button id="B2" onclick="myS2()">Go</button>
+    <h2>Search Completly</h2><input id="S2" onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()"> <button id="B2" onclick="myS2()">Go</button>
   </div>
 </body>
 </html>
