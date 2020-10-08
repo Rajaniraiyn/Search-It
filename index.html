@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
          var query = window.location.search;
-         if (typeof query === 'undefined' || variable === null) {
-              // variable is undefined or null
-         }
-         else {
+         if (typeof query !=== 'undefined' || query !=== null) {
          var query = window.location.search.replace('?s=','');
          location.href="https://google.com/search?q="+query;
          }
