@@ -5,9 +5,10 @@
   <title>Search All</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-         if (window.location.search==null) {
-            ...
-          }
+         var query = window.location.search;
+         if (typeof query === 'undefined' || variable === null) {
+              // variable is undefined or null
+         }
          else {
          var query = window.location.search.replace('?s=','');
          location.href="https://google.com/search?q="+query;
