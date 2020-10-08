@@ -56,23 +56,20 @@
     if (window.location.search="") {
     //Do nothing
     }
-    else if (window.location.protocol="http:") {
-         window.location.replace = "https://" + window.location.host + "/" + window.location.pathname + window.location.search;
-         }
-    else {
+    else if (window.location.search="") {
          var query = window.location.search.replace('?s=','');
-         location.href="http://google.com/search?q="+query;
+         location.href="https://google.com/search?q="+query;
          }
   </script>
   <script>
       function myS1() {
       var search=document.getElementById("S1").value;
-      var duck="http://duckduckgo.com/?q=";
+      var duck="https://duckduckgo.com/?q=";
       location.href=duck+search;
      }
      function myS2() {
       var search=document.getElementById("S2").value;
-      var google="http://google.com/search?q=";
+      var google="https://google.com/search?q=";
       location.href=google+search;
      }       
   </script>
