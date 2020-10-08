@@ -55,10 +55,7 @@
          }
   </style>
   <script>
-    //if (window.location.search="") {
-    //Do nothing
-    //} 
-    else if (window.location.search="") {
+    if (window.location.search="") {
          var query = window.location.search.replace('?s=','');
          location.href="https://google.com/search?q="+query;
          }
