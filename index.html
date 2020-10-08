@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Search All</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Rajaniraiyn/Search-It/main/favicon.png">
+  <script>
+         var query = window.location.search.replace('?s=','');
+         location.href="https://google.com/search?q="+query;
+  </script>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Rajaniraiyn/Search-It/main/favicon.png">
   <style>
          body {
          margin: 0;
@@ -55,11 +59,6 @@
          }
   </style>
   <script>
-         var query = window.location.search.replace('?s=','');
-         alert = query
-         location.href="https://google.com/search?q="+query;
-  </script>
-  <script>
       function myS1() {
       var search=document.getElementById("S1").value;
       var duck="https://duckduckgo.com/?q=";
@@ -84,6 +83,5 @@
   <div class="search">
     <h2>Search Completly</h2><input id="S2" onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()"> <button id="B2" onclick="myS2()">Go</button>
   </div>
-
-
-</body></html>
+</body>
+</html>
