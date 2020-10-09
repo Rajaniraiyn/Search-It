@@ -1,98 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Search All</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-         var query = window.location.search;
-         if (query !== null) {
-         var query = window.location.search.replace('?s=','');
-         location.href="https://google.com/search?q="+query;
-         }
-         else {
-         ...
-         }
-  </script>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Rajaniraiyn/Search-It/main/favicon.png">
-  <style>
-         body {
-         margin: 0;
-         background: linear-gradient(to right bottom, rgb(77, 84, 209), rgb(165, 28, 123) 50%, rgb(238, 74, 55) 100%);
-         height: 100%;
-         }
-         header {
-         border-radius: 10px;
-         margin-top: 0;
-         width: 100%;
-         }
-         h1 {
-         font-size: xx-large;
-         text-align: center;
-         }
-         h2 {
-         text-align: center;
-         }
-         input,
-         button {
-         display: flex;
-         border-radius: 100px;
-         border-width: 0;
-         }
-         .search {
-         padding: 10px;
-         margin: 10% auto
-         }
-         input {
-         border-bottom: 0;
-         background: #c1c1c1;
-         margin-left: auto;
-         margin-right: auto;
-         min-height: 30px;
-         min-width: 300px;
-         outline: 0;
-         text-align: center;
-         font-family: Arial, Helvetica, Sans-Serif;
-         box-shadow: 0 6px 20px 20px rgba(0, 0, 0, 0.15);
-         transition-timing-function: ease-in-out;
-         transition-duration: 1s;
-         }
-         input:focus {
-         background: #0ff;
-         width: 95%;
-         font-size: xx-large;
-         }
-         button {
-         margin: 10px auto;
-         background: gray;
-         padding: 5px;
-         outline: 0;
-         }
-  </style>
-  <script>
-      function myS1() {
-      var search=document.getElementById("S1").value;
-      var duck="https://duckduckgo.com/?q=";
-      location.href=duck+search;
-     }
-     function myS2() {
-      var search=document.getElementById("S2").value;
-      var google="https://google.com/search?q=";
-      location.href=google+search;
-     }       
-  </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Search All</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var query = window.location.search;
+        if (query !== null) {
+            var query = window.location.search.replace('?s=', '');
+            location.href = "https://google.com/search?q=" + query;
+        }
+    </script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to right bottom, rgb(77, 84, 209), rgb(165, 28, 123) 50%, rgb(238, 74, 55) 100%);
+            height: 100%;
+        }
+
+        header {
+            border-radius: 10px;
+            margin-top: 0;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input,
+        button {
+            display: flex;
+            border-radius: 100px;
+            border-width: 0;
+        }
+
+        .search {
+            padding: 10px;
+            margin: 10% auto
+        }
+
+        input {
+            border-bottom: 0;
+            background: #c1c1c1;
+            margin-left: auto;
+            margin-right: auto;
+            min-height: 30px;
+            width: 300px;
+            outline: 0;
+            text-align: center;
+            font-family: Arial, Helvetica, Sans-Serif;
+            box-shadow: 0 6px 20px 20px rgba(0, 0, 0, 0.15);
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+        }
+
+        input:focus {
+            background: #0ff;
+            width: 90%;
+            max-width: 500px;
+            font-size: xx-large;
+        }
+
+        button {
+            margin: 10px auto;
+            background: gray;
+            padding: 5px;
+            outline: 0;
+        }
+    </style>
+    <script>
+        function myS1() {
+            var search = document.getElementById("S1").value;
+            var duck = "https://duckduckgo.com/?q=";
+            location.href = duck + search;
+        }
+
+        function myS2() {
+            var search = document.getElementById("S2").value;
+            var google = "https://google.com/search?q=";
+            location.href = google + search;
+        }
+    </script>
 </head>
+
 <body>
-  <header>
-    <div id="h1"></div>
-    <h1>Search Everything</h1>
-    <div id="h2"></div>
-  </header>
-  <div class="search">
-    <h2>Search Privately</h2><input id="S1" onkeydown="if (event.keyCode == 13) document.getElementById('B1').click()"> <button id="B1" onclick="myS1()">Go</button>
-  </div>
-  <div class="search">
-    <h2>Search Completly</h2><input id="S2" onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()"> <button id="B2" onclick="myS2()">Go</button>
-  </div>
+    <header>
+
+        <h1>Search Everything</h1>
+    </header>
+    <div class="search">
+        <h2>Search Privately</h2><input id="S1" type="search"> <button id="B1" onclick="myS1()">Go</button>
+    </div>
+    <div class="search">
+        <h2>Search Completly</h2><input id="S2" type="search"> <button id="B2" onclick="myS2()">Go</button>
+    </div>
+
+
 </body>
+
 </html>
