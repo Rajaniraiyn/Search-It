@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Search All</title>
@@ -27,8 +28,8 @@
             text-align: center;
         }
 
-        input,
-        button {
+        button,
+        input {
             display: flex;
             border-radius: 100px;
             border-width: 0;
@@ -36,7 +37,7 @@
 
         .search {
             padding: 10px;
-            margin: 10% auto
+            margin: 10% auto;
         }
 
         input {
@@ -89,10 +90,12 @@
         <h1>Search Everything</h1>
     </header>
     <div class="search">
-        <h2>Search Privately</h2><input id="S1" type="search"> <button id="B1" onclick="myS1()">Go</button>
+        <h2>Search Privately</h2><input id="S1" type="search" onkeydown="if (event.keyCode == 13) document.getElementById('B1').click()">
+        <button id="B1" onclick="myS1()">Go</button>
     </div>
     <div class="search">
-        <h2>Search Completly</h2><input id="S2" type="search"> <button id="B2" onclick="myS2()">Go</button>
+        <h2>Search Completly</h2><input id="S2" type="search" onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()">
+        <button id="B2" onclick="myS2()">Go</button>
     </div>
 
 
