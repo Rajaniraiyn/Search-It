@@ -154,7 +154,7 @@
         function myS1() {
             var srh = document.getElementById("S1").value;
             if (srh = "") {
-                var x = document.getElementById("noqry");
+                var x = document.getElementById("noqry-1");
                 x.className = "show";
                 setTimeout(function() {
                     x.className = x.className.replace("show", "");
@@ -168,7 +168,7 @@
         function myS2() {
             var srh = document.getElementById("S2").value;
             if (search = "") {
-                var x = document.getElementById("noqry");
+                var x = document.getElementById("noqry-1");
                 x.className = "show";
                 setTimeout(function() {
                     x.className = x.className.replace("show", "");
@@ -194,7 +194,15 @@
         <h2>Search Completly</h2><input id="S2" type="search" placeholder='Want to search more accurately?' onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()" />
         <button id="B2" onclick="myS2()">Go</button>
     </div>
-    <div id="noqry">Please type something!</div>
+    <div id="noqry-1">Please type something!</div>
+    <div id="noqry-2">You're Offline now. Please  try to connect  before searching 🔎 </div>
+    <script>var x = navigator.onLine;
+              if (x != true) {
+              var x = document.getElementById("noqry-2");
+              x.className = "show";
+              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+              }
+            </script>
 
 </body>
 
