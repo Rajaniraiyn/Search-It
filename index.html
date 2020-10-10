@@ -129,7 +129,7 @@
             outline: 0
         }
 
-        #noqry, #nonet {
+        #noqry {
             visibility: hidden;
             min-width: 250px;
             margin-left: -125px;
@@ -145,7 +145,7 @@
             font-size: 17px
         }
 
-        .show {
+        #noqry.show {
             visibility: visible;
             -webkit-animation: fadein .5s, fadeout .5s 2.5s;
             animation: fadein .5s, fadeout .5s 2.5s
@@ -161,22 +161,20 @@
                     x.className = x.className.replace("show", "");
                 }, 3000);
             } else {
-                var duck = "https://duckduckgo.com/?q=";
-                location.href = duck + srh;
+                location.href = "https://duckduckgo.com/?q=" + document.getElementById("S1").value;
             }
         }
 
         function myS2() {
             var srh = document.getElementById("S2").value;
-            if (search = "") {
+            if (srh = "") {
                 var x = document.getElementById("noqry");
                 x.className = "show";
                 setTimeout(function() {
                     x.className = x.className.replace("show", "");
                 }, 3000);
             } else {
-                var google = "https://google.com/search?q=";
-                location.href = google + srh;
+                location.href = "https://google.com/search?q="" + document.getElementById("S2").value;
             }
         }
     </script>
@@ -196,17 +194,6 @@
         <button id="B2" onclick="myS2()">Go</button>
     </div>
     <div id="noqry">Please type something!</div>
-    <div id="nonet">You're Offline now. Please try to connect before searching 🔎 </div>
-    <script>
-        var x = navigator.onLine;
-        if (x != true) {
-            var x = document.getElementById("nonet");
-            x.className = "show";
-            setTimeout(function() {
-                x.className = x.className.replace("show", "");
-            }, 3000);
-        }
-    </script>
 
 </body>
 
