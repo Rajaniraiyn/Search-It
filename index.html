@@ -12,38 +12,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
     <style>
+        sult Source map Restructure Beautify @-webkit-keyframes fadein {
+            0% {
+                bottom: 0;
+                opacity: 0
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1
+            }
+        }
+
+        @keyframes fadein {
+            0% {
+                bottom: 0;
+                opacity: 0
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            0% {
+                bottom: 30px;
+                opacity: 1
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0
+            }
+        }
+
+        @keyframes fadeout {
+            0% {
+                bottom: 30px;
+                opacity: 1
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0
+            }
+        }
+
         body {
             margin: 0;
             font-family: 'Gaegu', cursive;
-            background: linear-gradient(to right bottom, rgb(77, 84, 209), rgb(165, 28, 123) 50%, rgb(238, 74, 55) 100%) no-repeat center center fixed;
+            background: linear-gradient(to right bottom, #4d54d1, #a51c7b 50%, #ee4a37 100%) no-repeat center center fixed
         }
 
         header {
             border-radius: 10px;
             margin-top: 0;
-            width: 100%;
+            width: 100%
         }
 
         h1 {
             font-size: xx-large;
-            text-align: center;
-            font-family: 'Varela Round', sans-serif;
-        }
-
-        h2 {
-            text-align: center;
+            font-family: 'Varela Round', sans-serif
         }
 
         button,
         input {
             display: flex;
             border-radius: 100px;
-            border-width: 0;
+            border-width: 0
         }
 
         .search {
             padding: 10px;
-            margin: 10% auto;
+            margin: 10% auto
+        }
+
+        h1,
+        h2,
+        input {
+            text-align: center
         }
 
         input {
@@ -54,11 +103,10 @@
             min-height: 30px;
             width: 300px;
             outline: 0;
-            text-align: center;
             font-family: Arial, Helvetica, Sans-Serif;
-            box-shadow: 0 6px 20px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 20px 20px rgba(0, 0, 0, .15);
             transition-timing-function: ease-in-out;
-            transition-duration: 1s;
+            transition-duration: 1s
         }
 
         input:focus,
@@ -66,19 +114,19 @@
             background: #0ff;
             width: 90%;
             max-width: 500px;
-            font-size: xx-large;
+            font-size: xx-large
         }
 
         input::placeholder {
             font-family: Gaegu, cursive;
-            font-size: 15px;
+            font-size: 15px
         }
 
         button {
             margin: 10px auto;
             background: gray;
             padding: 5px;
-            outline: 0;
+            outline: 0
         }
 
         #noqry {
@@ -94,61 +142,14 @@
             z-index: 1;
             left: 50%;
             bottom: 30px;
-            font-size: 17px;
+            font-size: 17px
         }
 
         #noqry.show {
             visibility: visible;
-            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            -webkit-animation: fadein .5s, fadeout .5s 2.5s;
+            animation: fadein .5s, fadeout .5s 2.5s
         }
-
-        @-webkit-keyframes fadein {
-            from {
-                bottom: 0;
-                opacity: 0;
-            }
-
-            to {
-                bottom: 30px;
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadein {
-            from {
-                bottom: 0;
-                opacity: 0;
-            }
-
-            to {
-                bottom: 30px;
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes fadeout {
-            from {
-                bottom: 30px;
-                opacity: 1;
-            }
-
-            to {
-                bottom: 0;
-                opacity: 0;
-            }
-        }
-
-        @keyframes fadeout {
-            from {
-                bottom: 30px;
-                opacity: 1;
-            }
-
-            to {
-                bottom: 0;
-                opacity: 0;
-            }
     </style>
     <script>
         function myS1() {
@@ -195,14 +196,17 @@
         <button id="B2" onclick="myS2()">Go</button>
     </div>
     <div id="noqry-1">Please type something!</div>
-    <div id="noqry-2">You're Offline now. Please  try to connect  before searching 🔎 </div>
-    <script>var x = navigator.onLine;
-              if (x != true) {
-              var x = document.getElementById("noqry-2");
-              x.className = "show";
-              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-              }
-            </script>
+    <div id="noqry-2">You're Offline now. Please try to connect before searching 🔎 </div>
+    <script>
+        var x = navigator.onLine;
+        if (x != true) {
+            var x = document.getElementById("noqry-2");
+            x.className = "show";
+            setTimeout(function() {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
 
 </body>
 
