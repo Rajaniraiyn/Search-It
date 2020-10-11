@@ -1,185 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<title>Search It</title>
-	<meta content="Search It is Single file Search Engine for everyone's need." name="description">
-	<meta content="index, follow" name="robots">
-	<meta content="Rajaniraiyn" name="author">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link href="favicon.png" rel="icon" type="image/png">
-	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-	<style>
-        @-webkit-keyframes fadein {
-	   0% {
-	       bottom: 0;
-	       opacity: 0
-	   }
 
-	   to {
-	       bottom: 30px;
-	       opacity: 1
-	   }
-	}
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<title>Search It</title>
+		<meta content="Search It is Single file Search Engine for everyone's need." name="description">
+		<meta content="index, follow" name="robots">
+		<meta content="Rajaniraiyn" name="author">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link href="favicon.png" rel="icon" type="image/png">
+		<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<style>
+@-webkit-keyframes fadein {
+    0% {
+        bottom: 0;
+        opacity: 0
+    }
 
-	@keyframes fadein {
-	   0% {
-	       bottom: 0;
-	       opacity: 0
-	   }
+    to {
+        bottom: 30px;
+        opacity: 1
+    }
+}
 
-	   to {
-	       bottom: 30px;
-	       opacity: 1
-	   }
-	}
+@keyframes fadein {
+    0% {
+        bottom: 0;
+        opacity: 0
+    }
 
-	@-webkit-keyframes fadeout {
-	   0% {
-	       bottom: 30px;
-	       opacity: 1
-	   }
+    to {
+        bottom: 30px;
+        opacity: 1
+    }
+}
 
-	   to {
-	       bottom: 0;
-	       opacity: 0
-	   }
-	}
+@-webkit-keyframes fadeout {
+    0% {
+        bottom: 30px;
+        opacity: 1
+    }
 
-	@keyframes fadeout {
-	   0% {
-	       bottom: 30px;
-	       opacity: 1
-	   }
+    to {
+        bottom: 0;
+        opacity: 0
+    }
+}
 
-	   to {
-	       bottom: 0;
-	       opacity: 0
-	   }
-	}
+@keyframes fadeout {
+    0% {
+        bottom: 30px;
+        opacity: 1
+    }
 
-	body {
-	   margin: 0;
-	   font-family: 'Gaegu',cursive;
-	   background: linear-gradient(to right bottom,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed
-	}
+    to {
+        bottom: 0;
+        opacity: 0
+    }
+}
 
-	header {
-	   border-radius: 10px;
-	   margin-top: 0;
-	   width: 100%
-	}
+body {
+    margin: 0;
+    font-family: 'Gaegu',cursive;
+    background: linear-gradient(to right bottom,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed
+}
 
-	h1 {
-	   font-size: xx-large;
-	   font-family: 'Varela Round',sans-serif
-	}
+header {
+    border-radius: 10px;
+    margin-top: 0;
+    width: 100%
+}
 
-	button,input {
-	   display: flex;
-	   border-radius: 100px;
-	   border-width: 0
-	}
+h1 {
+    font-size: xx-large;
+    font-family: 'Varela Round',sans-serif
+}
 
-	.search {
-	   padding: 10px;
-	   margin: 10% auto
-	}
+button,input {
+    display: flex;
+    border-radius: 100px;
+    border-width: 0
+}
 
-	h1,h2,input {
-	   text-align: center
-	}
+.search {
+    padding: 10px;
+    margin: 10% auto
+}
 
-	input {
-	   border-bottom: 0;
-	   background: #c1c1c1;
-	   margin-left: auto;
-	   margin-right: auto;
-	   min-height: 30px;
-	   width: 300px;
-	   outline: 0;
-	   font-family: Arial,Helvetica,Sans-Serif;
-	   box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
-	   transition-timing-function: ease-in-out;
-	   transition-duration: 1s
-	}
+h1,h2,input {
+    text-align: center
+}
 
-	input:focus,input:hover {
-	   background: #0ff;
-	   width: calc(100% - 10px);
-	   font-size: 18px
-	}
+input {
+    border-bottom: 0;
+    background: #c1c1c1;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 30px;
+    width: 300px;
+    outline: 0;
+    font-family: Arial,Helvetica,Sans-Serif;
+    box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s
+}
 
-	input::placeholder {
-	   font-family: Gaegu,cursive;
-	   font-size: 15px
-	}
+input:focus,input:hover {
+    background: #0ff;
+    width: calc(100% - 10px);
+    font-size: 18px
+}
 
-	button {
-	   margin: 10px auto;
-	   background: gray;
-	   padding: 5px;
-	   outline: 0
-	}
+input::placeholder {
+    font-family: Gaegu,cursive;
+    font-size: 15px
+}
 
-	#noqry {
-	   visibility: hidden;
-	   min-width: 250px;
-	   margin-left: -125px;
-	   background-color: #333;
-	   color: #fff;
-	   text-align: center;
-	   border-radius: 8px;
-	   padding: 16px;
-	   position: fixed;
-	   z-index: 1;
-	   left: 50%;
-	   bottom: 30px;
-	   font-size: 17px
-	}
+button {
+    margin: 10px auto;
+    background: gray;
+    padding: 5px;
+    outline: 0
+}
 
-	#noqry.show {
-	   visibility: visible;
-	   -webkit-animation: fadein .5s,fadeout .5s 2.5s;
-	   animation: fadein .5s,fadeout .5s 2.5s
-	}
-	
-	</style>
-	<script>
-	             function myS1() {
-	      if (1 == document.getElementById("S1").value + 1) {
-	          var a = document.getElementById("noqry");
-	          a.className = "show";
-	          setTimeout(function () {
-	              a.className = a.className.replace("show", "")
-	          }, 3e3)
-	      } else location.href = "https://duckduckgo.com/?q=" + document.getElementById("S1").value
-	   }
+#noqry {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px
+}
 
-	   function myS2() {
-	      if (1 == document.getElementById("S2").value + 1) {
-	          var a = document.getElementById("noqry");
-	          a.className = "show";
-	          setTimeout(function () {
-	              a.className = a.className.replace("show", "")
-	          }, 3e3)
-	      } else location.href = "https://google.com/search?q=" + document.getElementById("S2").value
-	   }
-	</script>
-</head>
-<body>
-	<header>
-		<h1>Search It</h1>
-	</header>
-	<div class="search">
-		<h2>Search Privately</h2><input id="S1" onkeydown="if (event.keyCode == 13) document.getElementById('B1').click()" placeholder='Want to search more Securely?' type="search"> <button id="B1" onclick="myS1()">Go</button>
-	</div>
-	<div class="search">
-		<h2>Search Completly</h2><input id="S2" onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()" placeholder='Want to search more accurately?' type="search"> <button id="B2" onclick="myS2()">Go</button>
-	</div>
-	<div id="noqry">
-		Please type something!
-	</div>
-</body>
+#noqry.show {
+    visibility: visible;
+    -webkit-animation: fadein .5s,fadeout .5s 2.5s;
+    animation: fadein .5s,fadeout .5s 2.5s
+}
+		</style>
+		<script>
+			function myS1() {
+				if (1 == document.getElementById("S1").value + 1) {
+					var a = document.getElementById("noqry");
+					a.className = "show";
+					setTimeout(function() {
+						a.className = a.className.replace("show", "")
+					}, 3e3)
+				} else location.href = "https://duckduckgo.com/?q=" + document.getElementById("S1").value
+			}
+
+			function myS2() {
+				if (1 == document.getElementById("S2").value + 1) {
+					var a = document.getElementById("noqry");
+					a.className = "show";
+					setTimeout(function() {
+						a.className = a.className.replace("show", "")
+					}, 3e3)
+				} else location.href = "https://google.com/search?q=" + document.getElementById("S2").value
+			}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Search It</h1>
+		</header>
+		<div class="search">
+			<h2>Search Privately</h2><input id="S1" onkeydown="if (event.keyCode == 13) document.getElementById('B1').click()" placeholder='Want to search more Securely?' type="search"><button id="B1" onclick="myS1()">Go</button>
+		</div>
+		<div class="search">
+			<h2>Search Completly</h2><input id="S2" onkeydown="if (event.keyCode == 13) document.getElementById('B2').click()" placeholder='Want to search more accurately?' type="search"><button id="B2" onclick="myS2()">Go</button>
+		</div>
+		<div id="noqry"> Please type something! </div>
+	</body>
+
 </html>
