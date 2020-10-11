@@ -154,7 +154,7 @@
     <script>
         function myS1() {
             var srh = document.getElementById("S1").value;
-            if (srh = "") {
+            if (srh == undefined || srh === null) {
                 var x = document.getElementById("noqry");
                 x.className = "show";
                 setTimeout(function() {
@@ -167,14 +167,14 @@
 
         function myS2() {
             var srh = document.getElementById("S2").value;
-            if (srh = "") {
+            if (srh == undefined || srh === null) {
                 var x = document.getElementById("noqry");
                 x.className = "show";
                 setTimeout(function() {
                     x.className = x.className.replace("show", "");
                 }, 3000);
             } else {
-                location.href = "https://google.com/search?q="" + document.getElementById("S2").value;
+                location.href = "https://google.com/search?q=" + document.getElementById("S2").value;
             }
         }
     </script>
