@@ -147,11 +147,13 @@ button {
   </style>
   <script>
 	  const urlParams = new URLSearchParams(window.location.search);
-	  if (1== urlParams.get('c') +1) {
-		 location.href = "https://google.com/search?q=" + urlParams.get('c')
-	  } else if (1== urlParams.get('p') +1) {
-		  location.href = "https://duckduckgo.com/?q=" + urlParams.get('p')
-	  } else { alert('Please, Search something in the search feild.') }  		  
+	   const c = urlParams.get('c');
+	   const p = urlParams.get('p');
+	  if (1 == c + 1) {
+		 location.href = "https://google.com/search?q=" + c
+	  } else if (1 == p + 1) {
+		  location.href = "https://duckduckgo.com/?q=" + p
+	  } else alert('Please, Search something in the search field.')  		  
   </script>
   <script>
 function myS1() {
