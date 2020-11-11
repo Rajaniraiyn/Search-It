@@ -2,18 +2,18 @@
 <html lang=en>
 	
 <head>
-	<script>
-                const params=new URLSearchParams(window.location.search);
-		const a=params.get("c");
-		const b=params.get("p");
-		if(1!=a+1) {
-			location.href="https://google.com/search?q="+params.get("c")
-		} else if(1!=b+1) {
-			location.href="https://duckduckgo.com/?q="+params.get("p")
-		} else {
-			alert("Error occured. Please try another one")
-		}
-        </script>
+<script>
+const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");
+if (1 != a + 1) {
+    location.href = "https://google.com/search?q=" + params.get("c")
+} else if (1 != b + 1) {
+    location.href = "https://duckduckgo.com/?q=" + params.get("p")
+} else if (a + b + 1 == 1) {
+    alert('please type something in the search box')
+} else {
+    alert("error occured please try another")
+}
+</script>
 	<meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
 	<title>Search It</title>
 	<meta content="Search It is Single file Search Engine for everyone's need." name=description>
