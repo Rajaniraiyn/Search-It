@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang=en>
-<script>
-const params = new URLSearchParams(window.location.search);
-a = params.get("c"), b = params.get("p");
-1 != a + 1 ? location.href = "https://google.com/search?q=" + params.get("c") : 1 != b + 1 ? location.href = "https://duckduckgo.com/?q=" + params.get("p");
-</script>
-
+	
 <head>
+	<script>
+                const params = new URLSearchParams(window.location.search);
+                a = params.get("c"), b = params.get("p");
+                1 != a + 1 ? location.href = "https://google.com/search?q=" + params.get("c") :
+		1 != b + 1 ? location.href = "https://duckduckgo.com/?q=" + params.get("p") :
+        </script>
 	<meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
 	<title>Search It</title>
 	<meta content="Search It is Single file Search Engine for everyone's need." name=description>
