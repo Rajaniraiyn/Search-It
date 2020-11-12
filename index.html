@@ -148,37 +148,24 @@
         -webkit-animation: fadein .5s,fadeout .5s 2.5s;
         animation: fadein .5s,fadeout .5s 2.5s
       }
-      #ofline,#online {
-        border-radius: 2px
-      }
     </style>
     <script>
-      function myS1() {
-        if(1 == document.getElementById("S1").value + 1) {
-          var c = document.getElementById("noqry");
-          c.className = "show";
-          setTimeout(function() {
-            c.className = c.className.replace("show", "")
-          }
-                     , 3000)
-        }
-        else {
-          location.replace("https://rajaniraiyn.github.io/Search-It/?p=" + document.getElementById("S1").value)
-        }
-      }
-      function myS2() {
-        if(1 == document.getElementById("S2").value + 1) {
-          var c = document.getElementById("noqry");
-          c.className = "show";
-          setTimeout(function() {
-            c.className = c.className.replace("show", "")
-          }
-                     , 3000)
-        }
-        else {
-          location.replace("https://rajaniraiyn.github.io/Search-It/?c=" + document.getElementById("S2").value)
-        }
-      }
+      function myS1(){
+        if(1==document.getElementById("S1").value+1){
+          var a=document.getElementById("noqry");
+          a.className="show";
+          setTimeout(function(){
+            a.className=a.className.replace("show","")}
+                     ,3E3)}
+        else location.replace("https://rajaniraiyn.github.io/Search-It/?p="+document.getElementById("S1").value)}
+      function myS2(){
+        if(1==document.getElementById("S2").value+1){
+          var a=document.getElementById("noqry");
+          a.className="show";
+          setTimeout(function(){
+            a.className=a.className.replace("show","")}
+                     ,3E3)}
+        else location.replace("https://rajaniraiyn.github.io/Search-It/?c="+document.getElementById("S2").value)};
     </script>
   </head>
   <body>
@@ -208,31 +195,21 @@
     <div id="online">You are Back
     </div>
     <script>
-      function ofLine() {
-        var x = document.getElementById("ofline");
-        x.className = "show";
+      function b(){
+        var a=document.getElementById("ofline");
+        a.className="show";
         setTimeout(function(){
-          x.className = x.className.replace("show", "");
-        }
-                   , 3000);
-      }
-      function onLine() {
-        var x = document.getElementById("online");
-        x.className = "show";
+          a.className=a.className.replace("show","")}
+                   ,3E3)}
+      function c(){
+        var a=document.getElementById("online");
+        a.className="show";
         setTimeout(function(){
-          x.className = x.className.replace("show", "");
-        }
-                   , 3000);
-      }
-      setInterval(function() {
-        if(navigator.onLine == false) {
-          ofLine()
-        }
-        else if(navigator.onLine != false) {
-          onLine()
-        }
-      }
-                  , 1000);
+          a.className=a.className.replace("show","")}
+                   ,3E3)}
+      setInterval(function(){
+        0==navigator.onLine?b():0!=navigator.onLine&&c()}
+                  ,1E3);
     </script>
   </body>
 </html>
