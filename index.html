@@ -128,7 +128,7 @@
         padding: 5px;
         outline: 0
       }
-      #noqry {
+      #noqry,#ofline,#online {
         visibility: hidden;
         min-width: 250px;
         margin-left: -125px;
@@ -143,10 +143,13 @@
         bottom: 30px;
         font-size: 17px
       }
-      #noqry.show {
+      #noqry.show,#ofline.show,#online.show {
         visibility: visible;
         -webkit-animation: fadein .5s,fadeout .5s 2.5s;
         animation: fadein .5s,fadeout .5s 2.5s
+      }
+      #ofline,#online {
+        border-radius: 2px
       }
     </style>
     <script>
@@ -199,5 +202,37 @@
     </div>
     <div id=noqry>Please type something!
     </div>
+    <div id="ofline">You are Offline
+      <br>Please Try to connect to the internet
+    </div>
+    <div id="online">You are Back
+    </div>
+    <script>
+      function ofLine() {
+        var x = document.getElementById("ofline");
+        x.className = "show";
+        setTimeout(function(){
+          x.className = x.className.replace("show", "");
+        }
+                   , 3000);
+      }
+      function onLine() {
+        var x = document.getElementById("online");
+        x.className = "show";
+        setTimeout(function(){
+          x.className = x.className.replace("show", "");
+        }
+                   , 3000);
+      }
+      setInterval(function() {
+        if(navigator.onLine == false) {
+          myFunction1()
+        }
+        else if(navigator.onLine != false) {
+          myFunction2()
+        }
+      }
+                  , 1000);
+    </script>
   </body>
 </html>
