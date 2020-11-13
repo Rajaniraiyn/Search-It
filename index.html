@@ -3,18 +3,7 @@
   <head>
     <script>
       const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");
-      if (1 != a + 1) {
-        location.replace("https://google.com/search?q=" + params.get("c"))
-      }
-      else if (1 != b + 1) {
-        location.replace("https://duckduckgo.com/?q=" + params.get("p"))
-      }
-      else if (a + b + 1 == 1) {
-        console.log()
-      }
-      else {
-        alert("Oops! Error occured please try another")
-      }
+      1!=a+1?location.replace("https://google.com/search?q="+params.get("c")):1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b+1==1?console.log():alert("Oops! Error occured please try another");
     </script>
     <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
     <title>Search It
@@ -24,8 +13,6 @@
     <meta content=Rajaniraiyn name=author>
     <meta content="width=device-width, initial-scale=1.0" name=viewport>
     <link href=favicon.png rel=icon type=image/png>
-    <meta name=google-site-verification content=U9PjazDHXPisBTAFixsUx0jUlMvKWXHfoyPxP321lsM />
-    <meta name=msvalidate.01 content=ED67BBD054A35D7F1D650B59A9DC10A5 />
     <style>
       @-webkit-keyframes fadein {
         0% {
@@ -70,11 +57,10 @@
       body {
         margin: 0;
         font-family: cursive;
+        background: -webkit-gradient(linear,left top,right bottom,from(#4d54d1),color-stop(50%,#a51c7b),to(#ee4a37)) no-repeat center center fixed;
+        background: -o-linear-gradient(left top,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed;
         background: linear-gradient(to right bottom,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed;
         background: url(https://source.unsplash.com/daily?technology,tech) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
         height: 100%;
         overflow: hidden
@@ -89,6 +75,8 @@
         font-family: sans-serif
       }
       button,input {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         border-radius: 100px;
         border-width: 0
@@ -109,14 +97,35 @@
         width: 300px;
         outline: 0;
         font-family: Arial,Helvetica,Sans-Serif;
+        -webkit-box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
         box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
+        -webkit-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
+        -webkit-transition-duration: 1s;
+        -o-transition-duration: 1s;
         transition-duration: 1s
       }
       input:focus,input:hover {
         background: #0ff;
         width: calc(100% - 10px);
         font-size: 18px
+      }
+      input::-webkit-input-placeholder {
+        font-family: cursive;
+        font-size: 15px
+      }
+      input::-moz-placeholder {
+        font-family: cursive;
+        font-size: 15px
+      }
+      input:-ms-input-placeholder {
+        font-family: cursive;
+        font-size: 15px
+      }
+      input::-ms-input-placeholder {
+        font-family: cursive;
+        font-size: 15px
       }
       input::placeholder {
         font-family: cursive;
@@ -152,20 +161,18 @@
     <script>
       function myS1(){
         if(1==document.getElementById("S1").value+1){
-          var a=document.getElementById("noqry");
-          a.className="show";
-          setTimeout(function(){
-            a.className=a.className.replace("show","")}
-                     ,3E3)}
+          var e=document.getElementById("noqry");
+          e.className="show",setTimeout(function(){
+            e.className=e.className.replace("show","")}
+                                        ,3e3)}
         else location.replace("https://rajaniraiyn.github.io/Search-It/?p="+document.getElementById("S1").value)}
       function myS2(){
         if(1==document.getElementById("S2").value+1){
-          var a=document.getElementById("noqry");
-          a.className="show";
-          setTimeout(function(){
-            a.className=a.className.replace("show","")}
-                     ,3E3)}
-        else location.replace("https://rajaniraiyn.github.io/Search-It/?c="+document.getElementById("S2").value)};
+          var e=document.getElementById("noqry");
+          e.className="show",setTimeout(function(){
+            e.className=e.className.replace("show","")}
+                                        ,3e3)}
+        else location.replace("https://rajaniraiyn.github.io/Search-It/?c="+document.getElementById("S2").value)}
     </script>
   </head>
   <body>
@@ -176,14 +183,14 @@
     <div class=search>
       <h2>Search Privately
       </h2>
-      <input id=S1 onkeydown="if(event.keyCode==13)document.getElementById('B1').click()" placeholder='Want to search more Securely?' type=search>
+      <input id=S1 onkeydown="13==event.keyCode&&document.getElementById("B1").click();" placeholder='Want to search more Securely?' type=search>
       <button id=B1 onclick=myS1()>Go
       </button>
     </div>
     <div class=search>
       <h2>Search Completly
       </h2>
-      <input id=S2 onkeydown="if(event.keyCode==13)document.getElementById('B2').click()" placeholder='Want to search more accurately?' type=search>
+      <input id=S2 onkeydown="13==event.keyCode&&document.getElementById("B2").click();" placeholder='Want to search more accurately?' type=search>
       <button id=B2 onclick=myS2()>Go
       </button>
     </div>
@@ -195,21 +202,19 @@
     <div id="online">You are Back
     </div>
     <script>
-      function b(){
-        var a=document.getElementById("ofline");
-        a.className="show";
-        setTimeout(function(){
-          a.className=a.className.replace("show","")}
-                   ,3E3)}
-      function c(){
-        var a=document.getElementById("online");
-        a.className="show";
-        setTimeout(function(){
-          a.className=a.className.replace("show","")}
-                   ,3E3)}
+      function noInternet(){
+        var e=document.getElementById("ofline");
+        e.className="show",setTimeout(function(){
+          e.className=e.className.replace("show","")}
+                                      ,3e3)}
+      function Internet(){
+        var e=document.getElementById("online");
+        e.className="show",setTimeout(function(){
+          e.className=e.className.replace("show","")}
+                                      ,3e3)}
       setInterval(function(){
-        0==navigator.onLine?b():0!=navigator.onLine&&c()}
-                  ,1E3);
+        0==navigator.onLine?noInternet():0!=navigator.onLine&&internet()}
+                  ,1e3);
     </script>
   </body>
 </html>
