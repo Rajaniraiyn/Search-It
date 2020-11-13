@@ -137,7 +137,7 @@
         padding: 5px;
         outline: 0
       }
-      #noqry,#ofline,#online {
+      #noqry,#ofline {
         visibility: hidden;
         min-width: 250px;
         margin-left: -125px;
@@ -152,7 +152,7 @@
         bottom: 30px;
         font-size: 17px
       }
-      #noqry.show,#ofline.show,#online.show {
+      #noqry.show,#ofline.show {
         visibility: visible;
         -webkit-animation: fadein .5s,fadeout .5s 2.5s;
         animation: fadein .5s,fadeout .5s 2.5s
@@ -199,21 +199,14 @@
     <div id="ofline">You are Offline
       <br>Please Try to connect to the internet
     </div>
-    <div id="online">You are Back
-    </div>
     <script>
-      function noInternet(){
+      function offLine(){
         var e=document.getElementById("ofline");
         e.className="show",setTimeout(function(){
           e.className=e.className.replace("show","")}
                                       ,3e3)}
-      function internet(){
-        var e=document.getElementById("online");
-        e.className="show",setTimeout(function(){
-          e.className=e.className.replace("show","")}
-                                      ,3e3)}
       setInterval(function(){
-        0==navigator.onLine?noInternet():0!=navigator.onLine&&internet()}
+        0==navigator.onLine?offLine()}
                   ,1e3);
     </script>
   </body>
