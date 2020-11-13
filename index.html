@@ -3,7 +3,7 @@
   <head>
     <script>
       const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");
-      1!=a+1?location.replace("https://google.com/search?q="+params.get("c")):1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b+1==1?console.log():alert("Oops! Error occured please try another");
+      0!=a?location.replace("https://google.com/search?q="+params.get("c")):0!=b?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b===0?console.log():alert("Oops! Error occured please try another");
     </script>
     <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
     <title>Search It
@@ -16,7 +16,7 @@
     <link href="style.css" rel="stylesheet">
     <script>
   function myS1() {
-    if (1 == document.getElementById("S1").value + 1) {
+    if (0===document.getElementById("S1").value) {
       var e = document.getElementById("noqry");
       e.className = "show", setTimeout(function() {
         e.className = e.className.replace("show", "");
@@ -26,7 +26,7 @@
     else location.href="https://rajaniraiyn.github.io/Search-It/?p=" + document.getElementById("S1").value;
   }
   function myS2() {
-    if (1 == document.getElementById("S2").value + 1) {
+    if (0===document.getElementById("S2").value) {
       var e = document.getElementById("noqry");
       e.className = "show", setTimeout(function() {
         e.className = e.className.replace("show", "");
