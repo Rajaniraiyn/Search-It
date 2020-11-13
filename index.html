@@ -3,7 +3,7 @@
   <head>
     <script>
       const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");
-      0!=a?location.replace("https://google.com/search?q="+params.get("c")):0!=b?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b===0?console.log():alert("Oops! Error occured please try another");
+      0!=a?location.replace("https://google.com/search?q="+params.get('c')):0!=b?location.replace("https://duckduckgo.com/?q="+params.get('p')):a+b===0?console.log():alert("Oops! Error occured please try another");
     </script>
     <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
     <title>Search It
