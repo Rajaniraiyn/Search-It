@@ -2,9 +2,9 @@
   body {
     margin: 0;
     font-family: cursive;
-    background: url(https://source.unsplash.com/daily?technology,tech)no-repeat center center fixed,-webkit-gradient(linear,left top,right bottom,from(#4d54d1),color-stop(50%,#a51c7b),to(#ee4a37)) no-repeat center center fixed;
-    background: url(https://source.unsplash.com/daily?technology,tech)no-repeat center center fixed,-o-linear-gradient(left top,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed;
-    background: url(https://source.unsplash.com/daily?technology,tech)no-repeat center center fixed,linear-gradient(to right bottom,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed;
+    background: url(https://source.unsplash.com/1600x900/?nature,tech)no-repeat center center fixed,-webkit-gradient(linear,left top,right bottom,from(#4d54d1),color-stop(50%,#a51c7b),to(#ee4a37)) no-repeat center center fixed;
+    background: url(https://source.unsplash.com/1600x900/?nature,tech)no-repeat center center fixed,-o-linear-gradient(left top,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed;
+    background: url(https://source.unsplash.com/1600x900/?nature,tech)no-repeat center center fixed,linear-gradient(to right bottom,#4d54d1,#a51c7b 50%,#ee4a37 100%) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden
