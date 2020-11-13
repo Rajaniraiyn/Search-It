@@ -68,8 +68,8 @@
       e.className=e.className.replace("show","")}
                                   ,3e3)}
   setInterval(function(){
-    0===navigator.onLine&&offLine()}
-              ,1e3);
+    if(0==navigator.onLine){offLine()}}
+              ,1e3);}
     </script>
   </body>
 </html>
