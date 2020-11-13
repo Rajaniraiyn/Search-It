@@ -39,14 +39,14 @@
     <div class=search>
       <h2>Search Privately
       </h2>
-      <input id=S1 onkeydown="13==event.keyCode?document.getElementById("B1").click()" placeholder='Want to search more Securely?' type=search>
+      <input id=S1 onkeydown="if(13==event.keyCode)document.getElementById("B1").click()" placeholder='Want to search more Securely?' type=search>
       <button id=B1 onclick=myS1()>Go
       </button>
     </div>
     <div class=search>
       <h2>Search Completly
       </h2>
-      <input id=S2 onkeydown="13==event.keyCode?document.getElementById("B2").click()" placeholder='Want to search more accurately?' type=search>
+      <input id=S2 onkeydown="if(13==event.keyCode)document.getElementById("B2").click()" placeholder='Want to search more accurately?' type=search>
       <button id=B2 onclick=myS2()>Go
       </button>
     </div>
@@ -56,14 +56,14 @@
       <br>Please Try to connect to the internet
     </div>
     <script>
-      function offLine(){
-        var e=document.getElementById("ofline");
-        e.className="show",setTimeout(function(){
-          e.className=e.className.replace("show","")}
-                                      ,3e3)}
-      setInterval(function(){
-        0==navigator.onLine?offLine()}
-                  ,1e3)
+  function offLine(){
+    var e=document.getElementById("ofline");
+    e.className="show",setTimeout(function(){
+      e.className=e.className.replace("show","")}
+                                  ,3e3)}
+  setInterval(function(){
+    0===navigator.onLine&&offLine()}
+              ,1e3);
     </script>
   </body>
 </html>
