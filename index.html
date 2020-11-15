@@ -14,28 +14,6 @@
     <meta content="width=device-width, initial-scale=1.0" name=viewport>
     <link href=favicon.png rel=icon type=image/png>
     <link href="style.css" rel="stylesheet">
-    <script>
-  function myS1() {
-    if (0===document.getElementById("S1").value) {
-      var e = document.getElementById("noqry");
-      e.className = "show", setTimeout(function() {
-        e.className = e.className.replace("show", "");
-      }
-                                       , 3e3);
-    }
-    else location.href="https://rajaniraiyn.github.io/Search-It/?p=" + document.getElementById("S1").value;
-  }
-  function myS2() {
-    if (0===document.getElementById("S2").value) {
-      var e = document.getElementById("noqry");
-      e.className = "show", setTimeout(function() {
-        e.className = e.className.replace("show", "");
-      }
-                                       , 3e3);
-    }
-    else location.href="https://rajaniraiyn.github.io/Search-It/?c=" + document.getElementById("S2").value;
-  }
-    </script>
   </head>
   <body>
     <header>
@@ -61,15 +39,5 @@
     <div id="ofline">You are Offline
       <br>Please Try to connect to the internet
     </div>
-    <script>
-  function offLine(){
-    var e=document.getElementById("ofline");
-    e.className="show",setTimeout(function(){
-      e.className=e.className.replace("show","")}
-                                  ,3e3)}
-  setInterval(function(){
-    if(0==navigator.onLine){offLine()}}
-              ,1e3);
-    </script>
   </body>
 </html>
