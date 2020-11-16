@@ -8,8 +8,7 @@
   <li>It Consits of many types of search modes Privacy Enhanced, Entire Web, etc...
   </li>
   <li>To use this go to 
-    <a href='https://rajaniraiyn.github.io/Search-It/'>rajaniraiyn.github.io/Search-It/
-    </a>.
+    rajaniraiyn.github.io/Search-It/.
   </li>
 </ul>
 <br>
