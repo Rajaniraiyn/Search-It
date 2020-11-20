@@ -16,12 +16,13 @@
 *   Either of them redirect queries by a JavaScript in the top of the main HTML file
 
 ```javascript
-const params=new URLSearchParams(window.location.search),
-	  a=params.get("c"),
-	  b=params.get("p");
-1!=a+1?location.replace("https://google.com/search?q="+params.get("c")):
-1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):
-a+b+1==1?console.log(): alert("Oops! Error occured please try another");
+const params=new URLSearchParams(window.location.search),  //collect all parameters as parms
+	  a=params.get("c"),  //get 'c' parameter as a
+	  b=params.get("p");  //get 'p' parameter as b
+1!=a+1?location.replace("https://google.com/search?q="+params.get("c")): //if 'a' exists, replace url
+1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):  //if 'b' exists, replace url
+a+b+1==1?console.log():  //if both exists, do nothing
+alert("Oops! Error occured please try another"); //if there is any other, display error 
 ```
 
 **Note:**
