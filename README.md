@@ -22,7 +22,7 @@ const params=new URLSearchParams(window.location.search),  //collect all paramet
 1!=a+1?location.replace("https://google.com/search?q="+params.get("c")): //if 'a' exists, replace url
 1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):  //if 'b' exists, replace url
 a+b+1==1?console.log():  //if both exists, do nothing
-alert("Oops! Error occured please try another"); //if there is any other, display error 
+alert("Oops! Error occured please try another"); //if there is empty query, display error
 ```
 
 **Note:**
