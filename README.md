@@ -10,8 +10,8 @@
 
 ## Queries
 *   It has two types of queries
-   1.  For Complete search: https://rajaniraiyn.github.io/Search-It/?c={query}
-   2.  For Private search: https://rajaniraiyn.github.io/Search-It/?p={query}
+      1.  For Complete search: https://rajaniraiyn.github.io/Search-It/?c={query}
+      2.  For Private search: https://rajaniraiyn.github.io/Search-It/?p={query}
 
 *   Either of them redirect queries by a JavaScript in the top of the main HTML file
 
