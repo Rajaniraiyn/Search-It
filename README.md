@@ -2,7 +2,7 @@
 *   Search-It is a HTML file Search engine.
 *   It is **very small** and all in one HTML file.
 *   It consist of many types of search modes Privacy Enhanced, Entire Web, etc...
-*   To use this go to rajaniraiyn.github.io/Search-It/.
+*   To use this go to rajaniraiyn.github.io/Search-It.
 
 ## How this on privacy?
 *   While using this we can **remove unwanted URL trackers.**
@@ -20,15 +20,15 @@ const params = new URLSearchParams(window.location.search), //collect all parame
     a = params.get("c"), //get 'c' parameter as a
     b = params.get("p"); //get 'p' parameter as b
 1 != a + 1 
-    ? location.replace("https://google.com/search?q=" + params.get("c"))
+    ? location.replace("https://google.com/search?q=" + params.get("c"))  //replaces the URL
     : 
     1 != b + 1
-        ? location.replace("https://duckduckgo.com/?q=" + params.get("p"))
+        ? location.replace("https://duckduckgo.com/?q=" + params.get("p")) //replaces the URL
         : 
         a + b + 1 == 1
-            ? console.log()
+            ? alert("Use any one query.") //alert if both exists
             : 
-            alert("Oops! Error occured please try another"); //if there is empty query, display error
+            alert("Oops! Error occured please try another."); //if there is empty query in url, display error
 ```
 
 **Note:**
