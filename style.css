@@ -1,4 +1,71 @@
-@-webkit-keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}@keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}@-webkit-keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@-webkit-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}@keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
+@-webkit-keyframes gradient {
+    0%,to {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+@keyframes gradient {
+    0%,to {
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        bottom: 0;
+        opacity: 0
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    0% {
+        bottom: 0;
+        opacity: 0
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        bottom: 30px;
+        opacity: 1
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        bottom: 30px;
+        opacity: 1
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0
+    }
+}
+
 body {
     margin: 0;
     background: -o-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
