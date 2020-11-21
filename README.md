@@ -26,7 +26,7 @@ const params = new URLSearchParams(window.location.search), //collect all parame
         ? location.replace("https://duckduckgo.com/?q=" + params.get("p")) //replaces the URL
         : 
         a + b + 1 == 1
-            ? alert("Use any one query.") //alert if both exists
+            ? console.log() //do nothing
             : 
             alert("Oops! Error occured please try another."); //if there is empty query in url, display error
 ```
