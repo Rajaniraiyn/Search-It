@@ -2,7 +2,7 @@
 <html lang=en>
   <head>
     <script>
-      const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");1!=a+1?location.replace("https://google.com/search?q="+params.get("c")):1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b+1==1?alert("Use any one query"):alert("Oops! Error occured please try another");
+      const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");1!=a+1?location.replace("https://google.com/search?q="+params.get("c")):1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b+1==1?console.log():alert("Oops! Error occured please try another");
     </script>
     <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
     <title>Search It
