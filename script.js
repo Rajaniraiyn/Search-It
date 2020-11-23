@@ -1,5 +1,5 @@
   function search(e) {
-    if (0 === document.getElementById(e).value) {
+    if (0 == document.getElementById(e).value) {
       var n = document.getElementById("noqry");
       n.className = "show",
         setTimeout(function () {
