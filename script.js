@@ -1,9 +1,9 @@
   function search(e) {
     if (0 === document.getElementById(e).value) {
-      var a = document.getElementById("noqry");
-      a.className = "show",
+      var n = document.getElementById("noqry");
+      n.className = "show",
         setTimeout(function () {
-        a.className = t.className.replace("show", "")
+        n.className = n.className.replace("show", "")
       }  , 3e3)
     }
     else 
@@ -14,10 +14,10 @@
       : console.log()
       }
   function offLine() {
-    var e = document.getElementById("ofline");
-    a.className = "show",
+    var o = document.getElementById("ofline");
+    o.className = "show",
       setTimeout(function () {
-      a.className = a.className.replace("show", "")
+      o.className = o.className.replace("show", "")
     }  , 3e3)
   }
   setInterval(function () {
