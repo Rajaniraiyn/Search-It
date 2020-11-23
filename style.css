@@ -1,71 +1,9 @@
-@-webkit-keyframes gradient {
-    0%,to {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-}
-
-@keyframes gradient {
-    0%,to {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-}
-
-@-webkit-keyframes fadein {
-    0% {
-        bottom: 0;
-        opacity: 0
-    }
-
-    to {
-        bottom: 30px;
-        opacity: 1
-    }
-}
-
-@keyframes fadein {
-    0% {
-        bottom: 0;
-        opacity: 0
-    }
-
-    to {
-        bottom: 30px;
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeout {
-    0% {
-        bottom: 30px;
-        opacity: 1
-    }
-
-    to {
-        bottom: 0;
-        opacity: 0
-    }
-}
-
-@keyframes fadeout {
-    0% {
-        bottom: 30px;
-        opacity: 1
-    }
-
-    to {
-        bottom: 0;
-        opacity: 0
-    }
-}
-
+@-webkit-keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}
+@keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}
+@-webkit-keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
+@keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
+@-webkit-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
+@keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
 body {
     margin: 0;
     background: -o-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
@@ -75,17 +13,14 @@ body {
     background-size: 800% 800%;
     height: 100%
 }
-
 header {
     border-radius: 10px;
     margin-top: 0;
     width: 100%
 }
-
 h1 {
     font: xx-large sans-serif
 }
-
 button,input {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,20 +28,16 @@ button,input {
     border-radius: 100px;
     border-width: 0
 }
-
 label {
     font-size: 0
 }
-
 .search {
     padding: 10px;
     margin: 10% auto
 }
-
 h1,h2,input {
     text-align: center
 }
-
 input {
     border-bottom: 0;
     background: #c1c1c1;
@@ -125,40 +56,32 @@ input {
     -o-transition-duration: 1s;
     transition-duration: 1s
 }
-
 input:focus,input:hover {
     background: #0ff;
     width: calc(100% - 10px);
     font-size: 18px
 }
-
 button {
     margin: 10px auto;
     background: #fff;
     padding: 10px;
     outline: 0
 }
-
 input::-webkit-input-placeholder {
     font-size: 15px
 }
-
 input::-moz-placeholder {
     font-size: 15px
 }
-
 input:-ms-input-placeholder {
     font-size: 15px
 }
-
 input::-ms-input-placeholder {
     font-size: 15px
 }
-
 input::placeholder {
     font-size: 15px
 }
-
 #noqry,#ofline {
     visibility: hidden;
     min-width: 250px;
@@ -174,7 +97,6 @@ input::placeholder {
     bottom: 30px;
     font-size: 17px
 }
-
 #noqry.show,#ofline.show {
     visibility: visible;
     -webkit-animation: fadein .5s,fadeout .5s 2.5s;
