@@ -24,13 +24,10 @@ setInterval(function () {
 }, 1e3);
 function btn() {
     var a = document.getElementById("e1"),
-        b = document.getElementById("e2"),
-        c = document.getElementsByClassName("e3");
+        b = document.getElementById("e2");
     "none" === a.style.display
         ? (a.style.display = "block",
-           b.style.display = "none",
-           c.innerHTML = "Switch to Complete Mode")
+           b.style.display = "none")
         : (a.style.display = "none",
-           b.style.display = "block",
-           c.innerHTML = "Switch to Private Mode")
+           b.style.display = "block")
 };
