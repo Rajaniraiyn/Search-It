@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang=en charset=UTF-8>
   <head>
     <script>
       const params=new URLSearchParams(window.location.search),a=params.get("c"),b=params.get("p");1!=a+1?location.replace("https://google.com/search?q="+params.get("c")):1!=b+1?location.replace("https://duckduckgo.com/?q="+params.get("p")):a+b+1==1?console.log():alert("Oops! Error occured please try another");
     </script>
-    <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
-    <title>Search It
-    </title>
+    <title>Search It</title>
     <meta content="Search It is small HTML search redirector like original search engine and removes URL trackers for everyone's need." name=description>
     <meta content="index, follow" name=robots>
     <meta content=Rajaniraiyn name=author>
@@ -19,31 +17,31 @@
   </head>
   <body>
     <header>
-      <h1>Search It
-      </h1>
+      <h1>Search It</h1>
     </header>
     <div class=search>
-      <h2>Search Privately
-      </h2>
+      <button id='e3' onclick="btn()">Switch to Complete Mode</button>
+      <h2>Search Privately</h2>
       <input id=s1 onkeydown="if(13==event.keyCode)document.getElementById('b1').click()" placeholder='Want to search more Securely?' type=search>
-      <label for="s1">Want to search more Securely?
-      </label>
-      <button id=b1 onclick=search("s1")>Go
+      <label for="s1">Want to search more Securely?</label>
+      <button id=b1 onclick=search( "s1")>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><defs/>
+          <path d="M10 .2a9.8 9.8 0 106 17.5l1 .9c-.4.7-.3 1.5.3 2.1l4.6 4.6c.7.8 1.9.8 2.6 0l.8-.8c.8-.7.8-2 0-2.6l-4.6-4.6c-.6-.6-1.4-.7-2.1-.3l-1-1A9.8 9.8 0 0010 .3zM10 2a8 8 0 110 16 8 8 0 010-16zM5 7.5a5.5 5.5 0 004.6 8.3c1.2 0 2.3-.4 3.2-1H12a7 7 0 01-7-7v-.3z"/>
+        </svg>
       </button>
     </div>
     <div class=search>
-      <h2>Search Completly
-      </h2>
+      <button id='e3' onclick="btn()">Switch to Complete Mode</button>
+      <h2>Search Completly</h2>
       <input id=s2 onkeydown="if(13==event.keyCode)document.getElementById('b2').click()" placeholder='Want to search more accurately?' type=search>
-      <label for="s2">Want to search more accurately?
-      </label>
-      <button id=b2 onclick=search("s2")>Go
+      <label for="s2">Want to search more accurately?</label>
+      <button id=b2 onclick=search( "s2")>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><defs/>
+          <path d="M10 .2a9.8 9.8 0 106 17.5l1 .9c-.4.7-.3 1.5.3 2.1l4.6 4.6c.7.8 1.9.8 2.6 0l.8-.8c.8-.7.8-2 0-2.6l-4.6-4.6c-.6-.6-1.4-.7-2.1-.3l-1-1A9.8 9.8 0 0010 .3zM10 2a8 8 0 110 16 8 8 0 010-16zM5 7.5a5.5 5.5 0 004.6 8.3c1.2 0 2.3-.4 3.2-1H12a7 7 0 01-7-7v-.3z"/>
+        </svg>
       </button>
     </div>
-    <div id=noqry>Please type something!
-    </div>
-    <div id="ofline">You are Offline
-      <br>Please Try to connect to the internet
-    </div>
+    <div id=noqry>Please type something!</div>
+    <div id="ofline">You are Offline<br>Please Try to connect to the internet</div>
   </body>
 </html>
