@@ -105,9 +105,10 @@ input::placeholder {
 #e2 {
     display: none
 }
-#e3 {
+.e3 {
     margin-right: 5px
 }
 button:focus,button:hover {
-    background: gray
+    background: gray;
+    cursor: pointer
 }
