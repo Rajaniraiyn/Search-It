@@ -25,7 +25,7 @@ setInterval(function () {
 function btn() {
     var a = document.getElementById("e1"),
         b = document.getElementById("e2"),
-        c = document.getElementById("e3");
+        c = document.getElementsByClassName("e3");
     "none" === a.style.display
         ? (a.style.display = "block",
            b.style.display = "none",
