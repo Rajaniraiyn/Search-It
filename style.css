@@ -102,3 +102,12 @@ input::placeholder {
     -webkit-animation: fadein .5s,fadeout .5s 2.5s;
     animation: fadein .5s,fadeout .5s 2.5s
 }
+#e2 {
+    display: none
+}
+#e3 {
+    margin-right: 5px
+}
+button:focus,button:hover {
+    background: gray
+}
