@@ -10,7 +10,7 @@
 @-moz-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
 @-o-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
 @keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
-body {
+body{
     margin: 0;
     background: -o-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
     background: -webkit-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
@@ -26,17 +26,24 @@ body {
     background-size: 800% 800%;
     height: 100%
 }
-header {
+header{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin-top: 0;
     width: 100%
 }
-h1 {
-    font: 900 60px sans-serif
+h1{
+    font: 900 60px sans-serif;
+    margin-top: 0px
 }
-button,input {
+img{
+    background: #00000078;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px
+}
+button,input{
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -47,17 +54,17 @@ button,input {
     border-radius: 100px;
     border-width: 0
 }
-label {
+label{
     font-size: 0
 }
-.search {
+.search{
     padding: 10px;
     margin: 10% auto
 }
-h1,h2,input {
+h1,h2,input{
     text-align: center
 }
-input {
+input{
     border-bottom: 0;
     background: #c1c1c1;
     margin-left: auto;
@@ -78,43 +85,43 @@ input {
     -moz-transition-duration: 1s;
     transition-duration: 1s
 }
-input:focus,input:hover {
+input:focus,input:hover{
     background: #0ff;
     width: -webkit-calc(100% - 10px);
     width: -moz-calc(100% - 10px);
     width: calc(100% - 10px);
     font-size: 18px
 }
-button {
+button{
     margin: 10px auto;
-    background: #fff;
+    background: #fff6;
     outline: 0;
     width: 2rem;
     padding: 2px
 }
-input::-ms-input-placeholder {
+input::-ms-input-placeholder{
     font-size: 15px
 }
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder{
     font-size: 15px
 }
-input:-moz-placeholder {
+input:-moz-placeholder{
     font-size: 15px
 }
-input::-moz-placeholder {
+input::-moz-placeholder{
     font-size: 15px
 }
-input:-ms-input-placeholder {
+input:-ms-input-placeholder{
     font-size: 15px
 }
-input::placeholder {
+input::placeholder{
     font-size: 15px
 }
-#noqry,#ofline {
+#noqry,#ofline{
     visibility: hidden;
     min-width: 250px;
     margin-left: -125px;
-    background-color: #333;
+    background-color: #33333378;
     color: #fff;
     text-align: center;
     -webkit-border-radius: 8px;
@@ -127,45 +134,45 @@ input::placeholder {
     bottom: 30px;
     font-size: 17px
 }
-#noqry.show,#ofline.show {
+#noqry.show,#ofline.show{
     visibility: visible;
     -webkit-animation: fadein .5s,fadeout .5s 2.5s;
     -moz-animation: fadein .5s,fadeout .5s 2.5s;
     -o-animation: fadein .5s,fadeout .5s 2.5s;
     animation: fadein .5s,fadeout .5s 2.5s
 }
-#e2 {
+#e2{
     display: none
 }
-.e3 {
+.e3{
     margin-right: 5px
 }
-button:focus,button:hover {
+button:focus,button:hover{
     background: gray;
     cursor: pointer
 }
-.switch {
+.switch{
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-left: -webkit-calc(100% - 60px);
-    margin-left: -moz-calc(100% - 60px);
-    margin-left: calc(100% - 60px)
+    margin-left: -webkit-calc(100% - 100px);
+    margin-left: -moz-calc(100% - 100px);
+    margin-left: calc(100% - 100px)
 }
-.switch input {
+.switch input{
     opacity: 0;
     width: 0;
     height: 0
 }
-.slider,.slider:before {
+.slider,.slider:before{
     position: absolute;
     -webkit-transition: .4s;
     -o-transition: .4s;
     -moz-transition: .4s;
     transition: .4s
 }
-.slider {
+.slider{
     cursor: pointer;
     top: 0;
     left: 0;
@@ -173,7 +180,7 @@ button:focus,button:hover {
     bottom: 0;
     background-color: #ccc
 }
-.slider:before {
+.slider:before{
     content: "";
     height: 26px;
     width: 26px;
@@ -181,27 +188,27 @@ button:focus,button:hover {
     bottom: 4px;
     background-color: #fff
 }
-input:checked+.slider {
+input:checked+.slider{
     background-color: #2196f3
 }
-input:focus+.slider {
+input:focus+.slider{
     -webkit-box-shadow: 0 0 1px #2196f3;
     -moz-box-shadow: 0 0 1px #2196f3;
     box-shadow: 0 0 1px #2196f3
 }
-input:checked+.slider:before {
+input:checked+.slider:before{
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     -moz-transform: translateX(26px);
     -o-transform: translateX(26px);
     transform: translateX(26px)
 }
-.slider.round {
+.slider.round{
     -webkit-border-radius: 34px;
     -moz-border-radius: 34px;
     border-radius: 34px
 }
-.slider.round:before {
+.slider.round:before{
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%
