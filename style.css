@@ -1,19 +1,33 @@
 @-webkit-keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}
+@-moz-keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}
+@-o-keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}
 @keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}
 @-webkit-keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
+@-moz-keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
+@-o-keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
 @keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}
 @-webkit-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
+@-moz-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
+@-o-keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
 @keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
 body {
     margin: 0;
     background: -o-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background: -webkit-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background: -moz-linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
     background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
     -webkit-animation: gradient 5s ease infinite;
+    -moz-animation: gradient 5s ease infinite;
+    -o-animation: gradient 5s ease infinite;
     animation: gradient 5s ease infinite;
+    -moz-background-size: 800% 800%;
+    -o-background-size: 800% 800%;
     background-size: 800% 800%;
     height: 100%
 }
 header {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     margin-top: 0;
     width: 100%
@@ -24,7 +38,11 @@ h1 {
 button,input {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
     display: flex;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
     border-radius: 100px;
     border-width: 0
 }
@@ -48,16 +66,21 @@ input {
     outline: 0;
     font-family: Arial,Helvetica,Sans-Serif;
     -webkit-box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
     box-shadow: 0 6px 20px 20px rgba(0,0,0,.15);
     -webkit-transition-timing-function: ease-in-out;
     -o-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
     -webkit-transition-duration: 1s;
     -o-transition-duration: 1s;
+    -moz-transition-duration: 1s;
     transition-duration: 1s
 }
 input:focus,input:hover {
     background: #0ff;
+    width: -webkit-calc(100% - 10px);
+    width: -moz-calc(100% - 10px);
     width: calc(100% - 10px);
     font-size: 18px
 }
@@ -67,16 +90,19 @@ button {
     padding: 10px;
     outline: 0
 }
+input::-ms-input-placeholder {
+    font-size: 15px
+}
 input::-webkit-input-placeholder {
+    font-size: 15px
+}
+input:-moz-placeholder {
     font-size: 15px
 }
 input::-moz-placeholder {
     font-size: 15px
 }
 input:-ms-input-placeholder {
-    font-size: 15px
-}
-input::-ms-input-placeholder {
     font-size: 15px
 }
 input::placeholder {
@@ -89,6 +115,8 @@ input::placeholder {
     background-color: #333;
     color: #fff;
     text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
     border-radius: 8px;
     padding: 16px;
     position: fixed;
@@ -100,6 +128,8 @@ input::placeholder {
 #noqry.show,#ofline.show {
     visibility: visible;
     -webkit-animation: fadein .5s,fadeout .5s 2.5s;
+    -moz-animation: fadein .5s,fadeout .5s 2.5s;
+    -o-animation: fadein .5s,fadeout .5s 2.5s;
     animation: fadein .5s,fadeout .5s 2.5s
 }
 #e2 {
