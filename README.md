@@ -1,3 +1,4 @@
+
 # Search It
 *   Search-It is a HTML file Search engine.
 *   It is **very small** and all in one HTML file.
@@ -5,13 +6,16 @@
 *   To use this go to rajaniraiyn.github.io/Search-It.
 
 ## How this on privacy?
+
+   ![searchit-compressed](https://i.ibb.co/qrqQMMG/searchit-compressed.webp)
+
 *   While using this we can **remove unwanted URL trackers.**
 *   I made this as much small as possible I can. So there is **nothing else** other than I mentioned.
 
 ## Queries
 *   It has two types of queries
-      1.  For Complete search: https://rajaniraiyn.github.io/Search-It/?c={query}
-      2.  For Private search: https://rajaniraiyn.github.io/Search-It/?p={query}
+      1.  For Complete search: `https://rajaniraiyn.github.io/Search-It/?c={query}`
+      2.  For Private search: `https://rajaniraiyn.github.io/Search-It/?p={query}`
 
 *   Either of them redirect queries by a JavaScript in the top of the main HTML file
 
