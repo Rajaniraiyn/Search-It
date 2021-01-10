@@ -7,9 +7,13 @@
 
 ## How this on privacy?
 
+### Normal URL with trackers :
+
 `https://www.google.com/search?source=hp&ei=_Dv7X9yYJa3H4-EPms2JiAY&q=rajaniraiyn+github&oq=rajaniraiyn+github&gs_lcp=CgZwc3ktYWIQAzoICAAQ6gIQjwE6EQguELEDEIMBEMcBEKMCEJMCOgIILjoCCAA6CAgAELEDEIMBOgsILhCxAxDHARCjAjoFCAAQsQM6CAguEMkDEJMCOggILhCxAxCDAToLCC4QsQMQyQMQkwI6BQguELEDOgUIABDJAzoICC4QxwEQrwE6BAguEAo6DQguELEDEMkDEAoQkwI6CggAELEDELEDEAo6BAgAEAo6BwguELEDEAo6BwgAELEDEAo6BggAEAoQHjoKCC4QyQMQDRCTAjoGCAAQDRAeOggIABAIEA0QHjoKCAAQCBANEAoQHjoECAAQDToECC4QDToHCAAQyQMQDToHCCEQChCgAToFCCEQoAFQhxRYk0tguk9oAHAAeACAAcQCiAGgHZIBBzEuNy44LjKYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwjchs3A9JHuAhWt4zgGHZpmAmEQ4dUDCAc&uact=5`
 
 ![Before using Search It](https://i.postimg.cc/CM3t82vN/google-url-trackers.png)
+
+### Clean URL without trackers:
 
 `https://www.google.com/search?q=rajaniraiyn%20github`
 
