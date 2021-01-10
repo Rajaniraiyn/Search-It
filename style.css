@@ -1,10 +1,11 @@
 @keyframes gradient{0%,to{background-position:0 50%}50%{background-position:100% 50%}}@keyframes fadein{0%{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadeout{0%{bottom:30px;opacity:1}to{bottom:0;opacity:0}}
 body{background:linear-gradient(135deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);animation:gradient 5s ease infinite;background-size:800% 800%;height:100%}
 h1,header{margin-top:0}
+#s1,#s2{height:40px}
 header{border-radius:10px}
 header,svg{width:100%}
 h1{font:900 60px sans-serif}
-img{background:#00000078;padding:10px;border-radius:50%;margin:5px}
+img{background:#00000078;position:absolute;padding:10px;border-radius:50%;margin:5px}
 button,input{display:flex;border-radius:100px;border-width:0}
 label{font-size:0}
 .search{padding:10px;margin:0 auto}
