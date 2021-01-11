@@ -3,7 +3,7 @@
 - Search-It is a HTML file Search engine.
 - It is **very small** and all in one HTML file.
 - It consist of many types of search modes Privacy Enhanced, Entire Web, etc...
-- To use this go to rajaniraiyn.github.io/Search-It.
+- To use this go to [rajaniraiyn.github.io/Search-It/](https://rajaniraiyn.github.io/Search-It/).
 
 ## How this on privacy?
 
