@@ -5,7 +5,7 @@ h1,header{margin-top:0}
 header{border-radius:10px}
 header,svg{width:100%}
 h1{font:800 50px sans-serif;margin-left:80px}
-img{background:#00000078;dispaly:block;padding:10px;border-radius:50%;margin:5px}
+img{background:#00000078;display:block;padding:10px;border-radius:50%;margin:5px}
 button,input{display:flex;border-radius:100px;border-width:0}
 label{font-size:0}
 .search{padding:10px;margin:0 auto}
