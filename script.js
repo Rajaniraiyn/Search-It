@@ -6,7 +6,6 @@ document.getElementsByTagName("button")[0 || 1].addEventListener("click", functi
             n.className = n.className.replace("show", "")
         }, 3e3)
     }})
-document.
 function offLine() {
     var o = document.getElementById("ofline");
     o.className = "show",
