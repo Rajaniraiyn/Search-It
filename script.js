@@ -1,11 +1,12 @@
-document.querySelector("button").addEventListener("click", function(){
+function search(){
     if (0 == document.getElementsByTagName("button")[0 || 1].value) {
         var n = document.getElementById("noqry");
         n.className = "show",
         setTimeout(function () {
             n.className = n.className.replace("show", "")
         }, 3e3)
-    }})
+    }
+}
 function offLine() {
     var o = document.getElementById("ofline");
     o.className = "show",
