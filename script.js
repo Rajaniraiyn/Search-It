@@ -1,17 +1,12 @@
-function search(e) {
-    if (0 == document.getElementById(e).value) {
+document.getElementsByTagName("button")[0 || 1].addEventListener("click", function(){
+    if (0 == document.getElementsByTagName("button")[0 || 1].value) {
         var n = document.getElementById("noqry");
         n.className = "show",
         setTimeout(function () {
             n.className = n.className.replace("show", "")
         }, 3e3)
-    } else 
-        "s1" == e
-            ? location.href = "https://rajaniraiyn.github.io/Search-It/?p=" + document.getElementById(e).value
-            : "s2" == e
-                ? location.href = "https://rajaniraiyn.github.io/Search-It/?c=" + document.getElementById(e).value
-                : console.log()
-        }
+    }})
+document.
 function offLine() {
     var o = document.getElementById("ofline");
     o.className = "show",
