@@ -1,4 +1,4 @@
-document.getElementsByTagName("button")[0 || 1].addEventListener("click", function(){
+document.getElementsByTagName("button").addEventListener("click", function(){
     if (0 == document.getElementsByTagName("button")[0 || 1].value) {
         var n = document.getElementById("noqry");
         n.className = "show",
