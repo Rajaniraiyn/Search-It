@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Search It</ShortName>
+  <Description>Simple privacy focused Search Engine for everyone's need. This completely removes the URL trackers from search results page.</Description>
+  <Url type="text/html;charset=utf-8" rel="results" template="https://rajaniraiyn.github.io/Search-It/?c={searchTerms}"/>
+  <Url type="text/plain" rel="suggestions" template="https://www.google.com/complete/search?client=chrome&q={searchTerms}"/>
+  <Url type="application/x-moz-keywordsearch" template="https://www.google.com/complete/search?client=firefox&q={searchTerms}"/>
+  <moz:SearchForm>https://rajaniraiyn.github.io/Search-It</moz:SearchForm>
+  <Contact>https://github.com/Rajaniraiyn/Search-It</Contact>
+  <Tags>SearchIt searchit Google Search Web Private Secure</Tags>
+  <LongName>Search It | Search Redirector</LongName>
+  <Image type="image/png">https://rajaniraiyn.github.io/Search-It/logo.png</Image>
+  <Query role="example" searchTerms="Search It GitHub" />
+  <Developer>Rajaniraiyn https://rajaniraiyn.github.io/</Developer>
+  <Attribution>© 2021. All Rights Reserved</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+  <AdultContent>false</AdultContent>
+  <Language>*</Language>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>
