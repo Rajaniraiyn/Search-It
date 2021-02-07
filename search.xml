@@ -3,8 +3,8 @@
   <ShortName>Search It</ShortName>
   <Description>Simple privacy focused Search Engine for everyone's need. This completely removes the URL trackers from search results page.</Description>
   <Url type="text/html;charset=utf-8" rel="results" template="https://rajaniraiyn.github.io/Search-It/?c={searchTerms}"/>
-  <Url type="text/plain" rel="suggestions" template="https://www.google.com/complete/search?client=chrome&amp;q={searchTerms}"/>
-  <Url type="application/x-moz-keywordsearch" template="https://www.google.com/complete/search?client=firefox&amp;q={searchTerms}"/>
+  <Url type="text/plain" rel="suggestions" template="https://www.google.com/complete/search?client=chrome&q={searchTerms}"/>
+  <Url type="application/x-moz-keywordsearch" template="https://www.google.com/complete/search?client=firefox&q={searchTerms}"/>
   <moz:SearchForm>https://rajaniraiyn.github.io/Search-It</moz:SearchForm>
   <Contact>https://github.com/Rajaniraiyn/Search-It</Contact>
   <Tags>SearchIt searchit Google Search Web Private Secure</Tags>
