@@ -36,7 +36,7 @@
     "svelte-check": "^2.8.1",
     "svelte-preprocess": "^4.10.7",
     "terser": "^5.14.2",
-    "tslib": "^2.4.0",
+    "tslib": "^2.4.1",
     "typescript": "^4.6.4",
     "vite": "^3.2.1",
     "vite-imagetools": "^4.0.4",
