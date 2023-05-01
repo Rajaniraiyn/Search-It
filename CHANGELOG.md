@@ -7,6 +7,13 @@
 
 * **deploy.yaml:** fix GitHub pages action workflow ([f530230](https://github.com/Rajaniraiyn/Search-It/commit/f53023089184f708d643eef7ed5f0965e02eb745))
 
+## [1.0.1](https://github.com/Rajaniraiyn/Search-It/compare/v1.0.0...v1.0.1) (2023-05-01)
+
+
+### Bug Fixes
+
+* **deploy.yaml:** fix GitHub pages action workflow ([f530230](https://github.com/Rajaniraiyn/Search-It/commit/f53023089184f708d643eef7ed5f0965e02eb745))
+
 ## 1.0.0 (2023-04-26)
 
 
