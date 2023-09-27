@@ -46,6 +46,6 @@
     "vite-plugin-webfont-dl": "^3.7.6"
   },
   "dependencies": {
-    "howler": "^2.2.3"
+    "howler": "^2.2.4"
   }
 }
