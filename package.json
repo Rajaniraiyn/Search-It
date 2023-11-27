@@ -43,7 +43,7 @@
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-image-presets": "^0.3.4",
     "vite-plugin-pwa": "^0.17.0",
-    "vite-plugin-webfont-dl": "^3.8.1"
+    "vite-plugin-webfont-dl": "^3.9.1"
   },
   "dependencies": {
     "howler": "^2.2.4"
