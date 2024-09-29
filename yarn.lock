@@ -1441,10 +1441,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.3.tgz#472eaab5f15c1ffdd7f8628bd4c4f753995ec79e"
   integrity sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==
 
-"@tsconfig/svelte@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-5.0.2.tgz#c9ed3575c5445afb14965bb76e8446fbf7e4a0e6"
-  integrity sha512-BRbo1fOtyVbhfLyuCWw6wAWp+U8UQle+ZXu84MYYWzYSEB28dyfnRBIE99eoG+qdAC0po6L2ScIEivcT07UaMA==
+"@tsconfig/svelte@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@tsconfig/svelte/-/svelte-5.0.4.tgz#8bd0254472bd39a5e750f1b4a05ecb18c9f3bf80"
+  integrity sha512-BV9NplVgLmSi4mwKzD8BD/NQ8erOY/nUE/GpgWe2ckx+wIQF5RyRirn/QsSSCPeulVpc3RA/iJt6DpfTIZps0Q==
 
 "@types/eslint@^8.4.5":
   version "8.4.5"
